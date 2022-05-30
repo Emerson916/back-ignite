@@ -3,7 +3,9 @@ import { CreateDeliveryUseCase } from "./createDeliveryUseCase";
 
 export class CreateDeliveryController {
   async handle(req: Request, res: Response) {
-    const { id_client, item_name } = req.body;
+    const { item_name } = req.body;
+    const { id_client } = req;
+
     const createDeliveryUseCase = new CreateDeliveryUseCase();
 
     const delivery = await createDeliveryUseCase.execute({
@@ -11,6 +13,6 @@ export class CreateDeliveryController {
       item_name,
     });
 
-    return res.json(delivery)
+    return res.json(delivery);
   }
 }
