@@ -18,7 +18,7 @@ export async function ensureAuthenticateClient(
     });
   }
 
-  const [, token] = authHeader.split("");
+  const [, token] = authHeader.split(" ");
 
   try {
     const { sub } = verify(token, "b43fdd98b1fd705ae4c3a10cf25aad8a") as Ipayload;

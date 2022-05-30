@@ -26,6 +26,6 @@ routes.post(
   ensureAuthenticateClient,
   deliverymanController.handle
 );
-routes.get("delivery/available", findAllAvailableController.handle);
+routes.get("/delivery/available", findAllAvailableController.handle);
 
 export { routes };
