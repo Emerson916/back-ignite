@@ -21,6 +21,12 @@ Esse é um Backend de Delivery, onde você pode criar um cliente, entregador e p
 * 3° Baixe as migrations na sua maquina rodando um "npx prisma migrate dev"
 * 4° Rode com "npm dev" ou "yarn dev"
 
+## 🚧 ATENÇÃO: Você precisará estar com um banco Postgres sendo executado 🚧
+
+Caso você tenha o 🐳DOCKER instalado em sua maquina de desenvolvimento...
+
+Execute o seguinte comando: "docker run -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine"
+
 ### 🤔 Ficou com alguma dúvida ?
 
 Não hesite em me mandar perguntas, ficarei feliz em ajudar!!
