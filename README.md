@@ -27,6 +27,10 @@ Caso você tenha o 🐳DOCKER instalado em sua maquina de desenvolvimento...
 
 Execute o seguinte comando: "docker run -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine"
 
+Caso precise, crie um arquivo ".env" e passe a seguinte constante:
+
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/prisma_deliveries?schema=public"
+
 ### 🤔 Ficou com alguma dúvida ?
 
 Não hesite em me mandar perguntas, ficarei feliz em ajudar!!
